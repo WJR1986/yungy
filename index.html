@@ -553,28 +553,6 @@
   <script src="js/main.js"></script>
   <!-- <script src="js/galleryitems.js"></script> -->
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script>
-    const audio = document.getElementById('background-audio');
-    const playPauseButton = document.getElementById('play-pause-button');
-
-    // Initially, we set the button text to "Play" and mute the audio
-    audio.muted = true;
-    playPauseButton.textContent = 'Play Music';
-
-    // Event listener for button click
-    playPauseButton.addEventListener('click', function (event) {
-      event.preventDefault(); // Prevent the default anchor click behavior
-
-      if (audio.paused) {
-        audio.muted = false; // Unmute the audio
-        audio.play(); // Play audio
-        playPauseButton.textContent = 'Pause Music'; // Change button text
-      } else {
-        audio.pause(); // Pause audio
-        playPauseButton.textContent = 'Play Music'; // Change button text
-      }
-    });
-  </script>
 </body>
 
 </html>
