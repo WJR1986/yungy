@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Will">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>YUNGY | Official Site</title>
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="YUNGY">
+    <meta property="og:description" content="Singer and Songwriter">
+    <meta property="og:image" content="https://elenamaya.comimg/portfolio/elenacloseupwhite.png">
+    <meta property="og:url" content="http://elenamaya.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="YUNGY">
+    <meta name="twitter:description" content="Singer and Songwriter">
+    <meta name="twitter:image" content="https://elenamaya.comimg/portfolio/elenacloseupwhite.png">
+    <meta name="twitter:url" content="http://elenamaya.com">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"> -->
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <!--<link rel="stylesheet" href="css/heroes.css">-->
+    <!--<link rel="stylesheet" href="css/navbar-fixed.css">-->
+    <!--<link rel="stylesheet" href="css/features.css">-->
+    <!--<link rel="stylesheet" href="css/modal.css">-->
+    <!-- <link rel="stylesheet" href="css/portfolio.css"> -->
+    <link rel="stylesheet" href="css/style.css?v=1.0">
+
+    <!-- Google reCaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Love+Ya+Like+A+Sister&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@600&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tangerine&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/17e7e77638.js" crossorigin="anonymous"></script>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- SVG Icons -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="bootstrap" viewBox="0 0 118 94">
+            <title>Bootstrap</title>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+            </path>
+        </symbol>
+        <symbol id="check2" viewBox="0 0 16 16">
+            <path
+                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+        </symbol>
+        <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+        </symbol>
+        <symbol id="calendar3" viewBox="0 0 16 16">
+            <path
+                d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+            <path
+                d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+        </symbol>
+
+        <symbol id="geo-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M8 16a.5.5 0 0 1-.496-.438l-1.35-9.49a3.5 3.5 0 1 1 3.692 0l-1.35 9.49A.5.5 0 0 1 8 16z" />
+        </symbol>
+    </svg>
+    <svg class="spark-icon" viewBox="0 0 10 10" fill="#ff4500" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 0C4.7 1.5 3.5 3 2 4C2.5 5.5 3.5 6.5 5 7C6.5 6.5 7.5 5.5 8 4C6.5 3 5.3 1.5 5 0Z" />
+    </svg>
+
+    <main>
+
+        <!------------------->
+        <!---- Navbar ------->
+        <!------------------->
+        <nav class="navbar navbar-expand-md navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <!-- <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap" />
+          </svg> -->
+                    <!-- <img src="img/cat.png" alt="" style="height: 80px;"> -->
+                    <span class="fs-1 amatic-sc-bold">YUNGY</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto amatic-sc-bold fs-2">
+                        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="#my-work" class="nav-link">My Work</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="/gallery.html" class="nav-link">Gallery</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Enquiries</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!------------------->
+        <!-- Hero Section -->
+        <!------------------->
+        <section class="hero d-flex justify-content-center align-items-center text-center text-white">
+            <!-- Sparks Effect -->
+            <div class="sparks">
+                <!-- Orange Sparks -->
+                <svg class="spark-icon spark1" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 0C4.7 1.5 3.5 3 2 4C2.5 5.5 3.5 6.5 5 7C6.5 6.5 7.5 5.5 8 4C6.5 3 5.3 1.5 5 0Z"
+                        fill="#ff4500" />
+                </svg>
+                <svg class="spark-icon spark2" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 0C4.7 1.5 3.5 3 2 4C2.5 5.5 3.5 6.5 5 7C6.5 6.5 7.5 5.5 8 4C6.5 3 5.3 1.5 5 0Z"
+                        fill="#ff4500" />
+                </svg>
+                <svg class="spark-icon spark3" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 0C4.7 1.5 3.5 3 2 4C2.5 5.5 3.5 6.5 5 7C6.5 6.5 7.5 5.5 8 4C6.5 3 5.3 1.5 5 0Z"
+                        fill="#ff4500" />
+                </svg>
+                <svg class="spark-icon spark4" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 0C4.7 1.5 3.5 3 2 4C2.5 5.5 3.5 6.5 5 7C6.5 6.5 7.5 5.5 8 4C6.5 3 5.3 1.5 5 0Z"
+                        fill="#ff4500" />
+                </svg>
+                <svg class="spark-icon spark5" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 0C4.7 1.5 3.5 3 2 4C2.5 5.5 3.5 6.5 5 7C6.5 6.5 7.5 5.5 8 4C6.5 3 5.3 1.5 5 0Z"
+                        fill="#ff4500" />
+                </svg>
+
+                <!-- Yellow Sparks -->
+                <svg class="spark-icon spark-yellow spark6" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 0C4.7 1.5 3.5 3 2 4C2.5 5.5 3.5 6.5 5 7C6.5 6.5 7.5 5.5 8 4C6.5 3 5.3 1.5 5 0Z"
+                        fill="#ffd700" />
+                </svg>
+                <svg class="spark-icon spark-yellow spark7" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 0C4.7 1.5 3.5 3 2 4C2.5 5.5 3.5 6.5 5 7C6.5 6.5 7.5 5.5 8 4C6.5 3 5.3 1.5 5 0Z"
+                        fill="#ffd700" />
+                </svg>
+                <svg class="spark-icon spark-yellow spark8" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 0C4.7 1.5 3.5 3 2 4C2.5 5.5 3.5 6.5 5 7C6.5 6.5 7.5 5.5 8 4C6.5 3 5.3 1.5 5 0Z"
+                        fill="#ffd700" />
+                </svg>
+                <svg class="spark-icon spark-yellow spark9" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 0C4.7 1.5 3.5 3 2 4C2.5 5.5 3.5 6.5 5 7C6.5 6.5 7.5 5.5 8 4C6.5 3 5.3 1.5 5 0Z"
+                        fill="#ffd700" />
+                </svg>
+            </div>
+
+            <!-- Hero Content -->
+            <div class="hero-caption">
+                <img src="img/YUNGY.png" alt="Your Image" class="hero-image glow" />
+                <a href="#" id="play-pause-button" class="btn btn-primary fw-bold">Listen Now</a>
+            </div>
+
+            <!-- Audio Element -->
+            <audio id="background-audio" preload="auto" src="./music/Human.mp3" loop muted></audio>
+        </section>
+
+        <!-- Snazzy Divider -->
+        <div class="b-example-divider"></div>
+
+        <!------------------->
+        <!-- About Section -->
+        <!------------------->
+        <div class="about-section py-3" id="about">
+            <div class="container px-4">
+                <div class="row align-items-center">
+                    <div class="col-md-6 about-content">
+                        <!-- Text content and button -->
+                        <h1 class="about-title pb-2 border-bottom text-center text-md-start amatic-sc-bold">About Me
+                        </h1>
+                        <p class="about-description text-center text-md-start">
+                            <em>“Music has always been a way to express myself and connect with others. A form of solace
+                                throughout
+                                life.”</em>
+                        </p>
+                        <a href="#" class="btn btn-primary-custom fw-medium d-block mx-auto mx-md-0">Learn More</a>
+                    </div>
+                    <div class="col-md-6 position-relative">
+                        <!-- Image with text overlay -->
+                        <img src="img/yungybg2.jpg" class="about-image" alt="About Image">
+                        <div class="about-text-overlay">
+                            <div class="about-overlay-background">
+                                <p><em>“Music has always been a way to express myself and connect with others. A form of
+                                        solace
+                                        throughout life.”</em></p>
+                                <p>- YUNGY</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Snazzy Divider -->
+        <!-- <div class="b-example-divider"></div> -->
+
+        <!------------------->
+        <!-- Cards Section -->
+        <!------------------->
+        <!-- <div class="container px-4 py-4" id="custom-cards">
+      <h1 class="pb-2 border-bottom text-center text-md-start amatic-sc-bold">Services
+      </h1>
+
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-3">
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('img/1.png');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold card-text">Short title, long jacket</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use href="#sun-fill"></use>
+                  </svg>
+                </li>
+                <li class="d-flex align-items-center me-3">
+                </li>
+                <li class="d-flex align-items-center">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('img/2.png');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold card-text">Much longer title that wraps to multiple lines
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use href="#moon-stars-fill"></use>
+                  </svg>
+                </li>
+                <li class="d-flex align-items-center me-3">
+
+
+                </li>
+                <li class="d-flex align-items-center">
+
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('img/3.png'); opacity: 0.9">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-dark ">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold card-text">Another longer title belongs here</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use href="#circle-half"></use>
+                  </svg>
+                </li>
+                <li class="d-flex align-items-center me-3">
+
+                </li>
+                <li class="d-flex align-items-center">
+
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+        <!-- Snazzy Divider -->
+        <div class="b-example-divider"></div>
+
+        <!------------------->
+        <!-- Media Section -->
+        <!------------------->
+        <section class="container px-4 py-5">
+            <div class="row gx-5 align-items-center">
+                <h1 class="pb-2 border-bottom text-center text-md-start amatic-sc-bold" id="my-work"
+                    data-aos="fade-down" data-aos-duration="1000">
+                    My Work
+                </h1>
+
+                <!-- YouTube Video -->
+                <div class="col-lg-8 my-4 mb-lg-0">
+                    <div class="video-container">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/1mDxCZAv2Ts?si=nxm7mMGSMXFZbiFf"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- Watch on YouTube Button -->
+                <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                    <a href="https://www.youtube.com/channel/UCMPPB2JERvWVqtWeCO0Jpxw" class="btn btn-danger"
+                        target="_blank">Watch on YouTube</a>
+                </div>
+
+                <!-- Spotify Playlist -->
+                <div class="col-lg-8 my-4 mb-lg-0">
+                    <div class="">
+                        <iframe style="border-radius:12px"
+                            src="https://open.spotify.com/embed/track/1dbZPpPvzN1kI2QKYjBd9w?utm_source=generator&theme=0"
+                            width="100%" height="352" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <!-- Listen on Spotify Button -->
+                <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                    <a href="https://open.spotify.com/artist/1edRDz2M70YGM4K3Z9mEKz?go=1&sp_cid=33534d55bc97c415b39b23548f6aee4a&utm_source=embed_player_p&utm_medium=desktop&nd=1&dlsi=e6b9e20fcb344e61"
+                        class="btn btn-success" target="_blank">Listen on
+                        Spotify</a>
+                </div>
+
+                <!-- Soundcloud Playlist -->
+                <div class="col-lg-8 my-4 mb-lg-0">
+                    <div class="">
+                        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/635181021&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                        <div
+                            style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                            <a href="https://soundcloud.com/sean-yizzy-young" title="Yungy" target="_blank"
+                                style="color: #cccccc; text-decoration: none;">Yungy</a> · <a
+                                href="https://soundcloud.com/sean-yizzy-young/love-like-yours" title="Love Like Yours"
+                                target="_blank" style="color: #cccccc; text-decoration: none;">Love Like Yours</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Listen on Soundcloud Button -->
+                <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                    <a href="https://soundcloud.com/sean-yizzy-young?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+                        class="btn btn-warning" target="_blank">Listen on SoundCloud</a>
+                </div>
+
+
+
+            </div>
+
+            <!--------------------->
+            <!-- Badges Section -->
+            <!--------------------->
+            <div class="badges-section">
+                <div class="container">
+                    <h1 class="pb-2 pt-5 border-bottom text-center text-md-start amatic-sc-bold">Socials</h1>
+                    <div class="row justify-content-left pt-2">
+                        <!-- Facebook Badge -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
+                            <a href="https://www.facebook.com/people/Elena-Maya/100086372215199/" target="_blank"
+                                class="badge-link">
+                                <span
+                                    class="badge text-primary-emphasis bg-primary-subtle border border-primary-subtle">
+                                    <img src="img/svg-icons/facebook.svg" alt="Facebook" width="24" height="24"
+                                        class="me-2">
+                                    Facebook
+                                </span>
+                            </a>
+                        </div>
+                        <!-- Apple Music Badge -->
+                        <!-- <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
+              <a href="https://music.apple.com/gb/artist/elena-maya/318777106" target="_blank" class="badge-link">
+                <span class="badge text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle">
+                  <img src="img/svg-icons/apple.svg" alt="Apple Music" width="24" height="24" class="me-2">
+                  Apple Music
+                </span>
+              </a>
+            </div> -->
+                        <!-- Spotify Badge -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
+                            <a href="https://open.spotify.com/artist/1edRDz2M70YGM4K3Z9mEKz?go=1&sp_cid=33534d55bc97c415b39b23548f6aee4a&utm_source=embed_player_p&utm_medium=desktop&nd=1&dlsi=e6b9e20fcb344e61"
+                                target="_blank" class="badge-link">
+                                <span
+                                    class="badge text-success-emphasis bg-success-subtle border border-success-subtle">
+                                    <img src="img/svg-icons/spotify.svg" alt="Spotify" width="24" height="24"
+                                        class="me-2">
+                                    Spotify
+                                </span>
+                            </a>
+                        </div>
+                        <!-- YouTube Badge -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
+                            <a href="https://www.youtube.com/channel/UCiCL5PvJP3PJgK0lPgMEIMw" target="_blank"
+                                class="badge-link">
+                                <span class="badge text-danger-emphasis bg-danger-subtle border border-danger-subtle">
+                                    <img src="img/svg-icons/youtube.svg" alt="YouTube" width="24" height="24"
+                                        class="me-2">
+                                    YouTube
+                                </span>
+                            </a>
+                        </div>
+                        <!-- Twitter Badge -->
+                        <!-- <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
+              <a href="https://www.instagram.com/elenamayamusic" target="_blank" class="badge-link">
+                <span class="badge text-warning-emphasis bg-warning-subtle border border-warning-subtle">
+                  <img src="img/svg-icons/instagram.svg" alt="Twitter" width="24" height="24" class="me-2">
+                  Instagram
+                </span>
+              </a>
+            </div> -->
+                        <!-- Soundcloud Badge -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
+                            <a href="https://soundcloud.com/user-994844928?utm_source=mobi&utm_campaign=social_sharing"
+                                target="_blank" class="badge-link">
+                                <span class="badge text-info-emphasis bg-warning-subtle border border-warning-subtle">
+                                    <img src="img/svg-icons/soundcloud.svg" alt="Bandcamp" width="24" height="24"
+                                        class="me-2">
+                                    Soundcloud
+                                </span>
+                            </a>
+                        </div>
+                        <!-- TikTok Badge -->
+                        <!-- <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
+              <a href="https://www.tiktok.com/@elenamayamusic?_t=8oaiFL3L61Z&_r=1" target="_blank" class="badge-link">
+                <span class="badge text-light-emphasis bg-light-subtle border border-dark-subtle">
+                  <img src="img/svg-icons/tiktok.svg" alt="TikTok" width="24" height="24" class="me-2">
+                  TikTok
+                </span>
+              </a>
+            </div> -->
+                        <!-- Linktree Badge -->
+                        <!-- <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
+              <a href="https://linktr.ee/elenamaya" target="_blank" class="badge-link">
+                <span class="badge text-dark-emphasis bg-dark-subtle border border-dark-subtle">
+                  <img src="img/svg-icons/tree.svg" alt="Linktree" width="24" height="24" class="me-2">
+                  Linktree
+                </span>
+              </a>
+            </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Snazzy Divider -->
+        <div class="b-example-divider"></div>
+
+        <!--------------------->
+        <!-- Contact Section -->
+        <!--------------------->
+        <section id="contact" class="py-5">
+            <div class="container px-4">
+                <h1 class="pb-2 pt-2 ml-3 border-bottom text-center text-md-start amatic-sc-bold" data-aos="fade-down"
+                    data-aos-duration="1000">
+                    Enquiries
+                </h1>
+                <div class="row pt-4">
+                    <!-- Contact Form Column -->
+                    <div class="col-md-12" data-aos="fade-up" data-aos-duration="1000">
+                        <!-- Bootstrap contact form -->
+                        <form id="contact-form" method="post">
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Your name"
+                                        name="name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label form-mob-margin">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="Your number"
+                                        name="phone" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-12">
+                                    <label for="email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="name@example.com"
+                                        name="email" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-12">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Your message"
+                                        name="message" required></textarea>
+                                </div>
+                            </div>
+                            <div class="row mb-3 align-items-center">
+                                <div class="col-md-12 mb-3">
+
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="d-flex justify-content-left">
+                                        <button type="submit"
+                                            class="btn btn-primary btn-primary-custom fw-medium">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <!-- Modal Display Area-->
+    <div class="modal fade" id="exampleModalDefault" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Your Title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body mx-auto">
+                    <img src="img/bootstrap-docs.png" class="img-fluid round" id="modalImage" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="text-body-secondary pt-5 custom-footer">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <p class="mb-0 amatic-sc-bold fs-3">&copy; YUNGY | 2024</p>
+                <p class="mb-0">
+                    <a href="#" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+                </p>
+            </div>
+
+            <!-- Centred and narrower audio player -->
+            <!-- <div class="row justify-content-center">
+        <div class="col-8 col-md-6"> 
+          <audio controls class="w-100">
+            <source src="music/Human.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+          </audio>
+        </div>
+      </div> -->
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+    <!-- <script src="js/galleryitems.js"></script> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
