@@ -281,6 +281,10 @@ body {
   position: relative;
 }
 
+.about-title {
+  color: #a91d3a;
+}
+
 /* Text Content Styles */
 .about-content {
   padding: 20px;
@@ -446,8 +450,16 @@ body {
 /* Footer */
 .custom-footer {
   background-color: #f8f9fa;
-  padding: 2rem 0;
+  padding: 20px 0; /* Additional vertical padding */
   text-align: left; /* Center the footer content */
+}
+
+.custom-footer audio {
+  border-radius: 5px; /* Add some rounding to the player */
+  background: rgba(255, 255, 255, 0.1); /* Slight background for contrast */
+  padding: 10px; /* Add some padding around the audio controls */
+  margin: 0 auto; /* Center the audio player */
+  display: block; /* Ensure it's treated as a block element for margin to work */
 }
 
 /* Social Buttons */
@@ -466,7 +478,7 @@ body {
 
 /* Back to Top */
 .back-to-top {
-  color: #007bff;
+  color: #a91d3a;
   font-size: 1.5rem; /* Make sure the size is appropriate */
   display: inline-block; /* Ensure it is visible */
   text-decoration: none; /* Remove underline if present */
@@ -474,5 +486,5 @@ body {
 
 /* Back to Top Hover State */
 .back-to-top:hover {
-  color: #88cff1; /* Change color on hover */
+  color: #151515; /* Change color on hover */
 }

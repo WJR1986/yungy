@@ -127,10 +127,6 @@
       </div>
     </nav>
 
-    <!-- background-audio -->
-    <audio id="background-audio" preload="auto" src="./music/Human.mp3" autoplay loop></audio>
-
-
     <!------------------->
     <!-- Hero Section -->
     <!------------------->
@@ -172,9 +168,11 @@
       <!-- Hero Content -->
       <div class="hero-caption">
         <img src="img/YUNGY.png" alt="Your Image" class="hero-image glow" />
-        <a href="#" class="btn btn-primary fw-bold">Listen Now</a>
+        <a href="#" id="play-pause-button" class="btn btn-primary fw-bold">Listen Now</a>
       </div>
 
+      <!-- Audio Element -->
+      <audio id="background-audio" preload="auto" src="./music/Human.mp3" loop muted></audio>
     </section>
 
     <!-- Snazzy Divider -->
@@ -188,7 +186,7 @@
         <div class="row align-items-center">
           <div class="col-md-6 about-content">
             <!-- Text content and button -->
-            <h1 class="about-title border-bottom text-center text-md-start amatic-sc-bold">About Me</h1>
+            <h1 class="about-title pb-2 border-bottom text-center text-md-start amatic-sc-bold">About Me</h1>
             <p class="about-description text-center text-md-start"><em>“Music has always been a way to express myself
                 and
                 connect with others. A form of solace throughout life.”</em></p>
@@ -527,39 +525,54 @@
     </div>
   </div>
 
+  <!-- footer -->
   <footer class="text-body-secondary pt-5 custom-footer">
     <div class="container">
-      <p class="float-end mb-1">
-        <a href="#" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
-      </p>
-      <p>&copy; YUNGY | 2024</p>
-      <!-- <a href="https://www.instagram.com/alnwickpetcare/" target="_blank" class="social-button">
-        <i class="fab fa-instagram"></i> -->
-      </a>
-      <!-- Add more social buttons if needed -->
-    </div>
-    <div class="container">
-      <audio controls>
-        <source src="music/Human.mp3" type="audio/mp3">
-        Your browser does not support the audio tag.
-      </audio>
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <p class="mb-0 amatic-sc-bold fs-3">&copy; YUNGY | 2024</p>
+        <p class="mb-0">
+          <a href="#" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+        </p>
+      </div>
+
+      <!-- Centred and narrower audio player -->
+      <!-- <div class="row justify-content-center">
+        <div class="col-8 col-md-6"> 
+          <audio controls class="w-100">
+            <source src="music/Human.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+          </audio>
+        </div>
+      </div> -->
     </div>
   </footer>
+
+
   <script src="js/main.js"></script>
   <!-- <script src="js/galleryitems.js"></script> -->
   <script src="js/bootstrap.bundle.min.js"></script>
-  <!-- <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      function adjustHeroPadding() {
-        var navbarHeight = document.querySelector('.navbar').offsetHeight;
-        document.querySelector('.hero').style.paddingTop = navbarHeight + 'px';
+  <script>
+    const audio = document.getElementById('background-audio');
+    const playPauseButton = document.getElementById('play-pause-button');
+
+    // Initially, we set the button text to "Play" and mute the audio
+    audio.muted = true;
+    playPauseButton.textContent = 'Play Music';
+
+    // Event listener for button click
+    playPauseButton.addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent the default anchor click behavior
+
+      if (audio.paused) {
+        audio.muted = false; // Unmute the audio
+        audio.play(); // Play audio
+        playPauseButton.textContent = 'Pause Music'; // Change button text
+      } else {
+        audio.pause(); // Pause audio
+        playPauseButton.textContent = 'Play Music'; // Change button text
       }
-
-      adjustHeroPadding();
-
-      window.addEventListener('resize', adjustHeroPadding);
     });
-  </script> -->
+  </script>
 </body>
 
 </html>
