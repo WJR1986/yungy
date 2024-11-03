@@ -103,6 +103,10 @@ body {
   text-decoration: underline;
 }
 
+.navbar-toggler {
+  background-color: #a91d3a;
+}
+
 /* Hero Section */
 .hero {
   background-color: #151515;
