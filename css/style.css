@@ -1,0 +1,474 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #151515;
+  color: #a91d3a;
+}
+
+.love-ya-like-a-sister-regular {
+  font-family: "Love Ya Like A Sister", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #a91d3a;
+}
+
+.amatic-sc-regular {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.amatic-sc-bold {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.no-text-shadow {
+  text-shadow: none;
+}
+
+.title {
+  color: #fff;
+  background-color: #151515;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Shadow around the element */
+}
+
+/* Divider */
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(169, 29, 58, 0.9);
+  border: solid rgba(21, 21, 21, 0.8);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+.btn-primary-custom {
+  background-color: #a91d3a;
+  border-color: #151515;
+  color: #151515;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-primary-custom:hover {
+  background-color: #eeeeee;
+  border-color: #eeeeee;
+  color: #d61138;
+}
+
+.btn-secondary-custom {
+  text-decoration: none;
+  border-color: #ffdddd;
+}
+
+.btn-secondary-custom:hover {
+  background-color: #ffdddd;
+  border-color: #ffdddd;
+  color: #185574;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #151515;
+}
+
+.navbar a {
+  color: #a91d3a;
+}
+
+.navbar-brand {
+  margin-right: auto;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #a91d3a !important;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #151515;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Optional Fire Glow at Bottom */
+/* .hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: %;
+  background: radial-gradient(
+    circle at bottom,
+    rgba(255, 165, 0, 0.5),
+    transparent
+  );
+  z-index: 1;
+} */
+
+/* Hero Image Styles */
+.hero-image {
+  position: relative;
+  z-index: 3; /* Above sparks */
+  width: 90%; /* Responsive width */
+  max-width: 400px; /* Max width for larger screens */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Hero Image Glow Effect */
+.hero-image.glow {
+  filter: drop-shadow(0 0 10px rgba(255, 165, 0, 0.8))
+    drop-shadow(0 0 20px rgba(255, 165, 0, 0.6));
+}
+
+/* Sparks Container */
+.sparks {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  overflow: hidden;
+}
+
+/* Spark Icon Styles */
+.spark-icon {
+  position: absolute;
+  bottom: 0;
+  width: 8px;
+  height: 8px;
+  opacity: 0.8;
+  animation: rise 3s infinite ease-in-out;
+}
+
+/* Spark Position and Animation Duration */
+.spark1 {
+  left: 5%;
+  animation-duration: 3s;
+}
+.spark2 {
+  left: 15%;
+  animation-duration: 3.8s;
+}
+.spark3 {
+  left: 25%;
+  animation-duration: 4s;
+}
+.spark4 {
+  left: 35%;
+  animation-duration: 4.5s;
+}
+.spark5 {
+  left: 45%;
+  animation-duration: 3.5s;
+}
+.spark6 {
+  left: 55%;
+  animation-duration: 3.7s;
+}
+.spark7 {
+  left: 65%;
+  animation-duration: 4.1s;
+}
+.spark8 {
+  left: 75%;
+  animation-duration: 3.6s;
+}
+.spark9 {
+  left: 85%;
+  animation-duration: 4.3s;
+}
+.spark10 {
+  left: 95%;
+  animation-duration: 4.7s;
+}
+
+/* Rise Animation for Sparks */
+@keyframes rise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-100vh) scale(0.8);
+    opacity: 0;
+  }
+}
+
+/* Hero Caption */
+.hero-caption {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  padding: 20px 0; /* Vertical padding */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align items */
+}
+
+/* Button Styles */
+.hero-caption .btn {
+  margin-top: 20px; /* Space above the button */
+  background-color: #ff4d4f; /* Button background */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: block; /* Make button a block element */
+}
+
+/* Button Hover Effect */
+.hero-caption .btn:hover {
+  background-color: #ff7875; /* Hover background */
+}
+
+/* Text Shadow */
+.text-shadow {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Button Styles */
+.hero .btn-primary {
+  background-color: #ff4d4f; /* Original background color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.7s, filter 0.7s; /* Add transition for both background and filter */
+}
+
+.hero .btn-primary:hover {
+  background-color: #ff7875; /* Hover background color */
+  filter: drop-shadow(0 0 10px rgba(255, 165, 0, 0.8))
+    drop-shadow(0 0 10px rgba(255, 165, 0, 0.6));
+}
+
+/* About Section Styles */
+.about-section {
+  background-color: #151515; /* Adjust background color if needed */
+  color: #fff;
+  position: relative;
+}
+
+/* Text Content Styles */
+.about-content {
+  padding: 20px;
+}
+
+/* Overlay Background Styles */
+.about-text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.about-overlay-background {
+  background-color: rgba(
+    169,
+    29,
+    58,
+    0.8
+  ); /* Use the specified color with opacity */
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px; /* Optional: for rounded corners */
+}
+
+/* Image Styles */
+.about-image {
+  width: 100%; /* Full width to adapt to container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: for rounded corners */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-text-overlay {
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 20px; /* Add padding to the overlay */
+  }
+}
+
+/* Additional styles */
+.text-shadow {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* .hero .btn-primary {
+  background-color: #a91d3a;
+  border-color: #151515;
+  color: #151515;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.hero .btn-primary:hover {
+  background-color: #eeeeee;
+  border-color: #eeeeee;
+  color: #d61138;
+} */
+
+/* Additional styles */
+.text-shadow {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Gallery Styles */
+.image-container {
+  width: 100%;
+  max-width: 600px; /* or any max-width you prefer */
+  margin: 0 auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* This maintains the aspect ratio and ensures the image covers the container */
+}
+
+/* Media styles */
+.video-container,
+.spotify-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.video-container iframe,
+.spotify-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.apple-music-container {
+  position: relative;
+  width: 100%;
+  max-width: 660px; /* Ensure it doesn't exceed the desired width */
+  height: 175px; /* Fixed height, adjust as necessary */
+  overflow: hidden;
+  border-radius: 8px;
+  margin: 0 auto; /* Center the container if needed */
+}
+
+.apple-music-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Full height of the container */
+  border: 0;
+  border-radius: 8px;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+  border-radius: 50px; /* Ensure rounded pill shape */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.badge i {
+  font-size: 1.25rem; /* Adjust icon size as needed */
+}
+
+.badge .me-2 {
+  margin-right: 0.5rem; /* Adjust space between icon and text */
+}
+
+/* Add shadow effect on hover */
+.badge:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+  transform: translateY(-2px); /* Optional: Adds a subtle lift effect */
+}
+
+.linktree-section {
+  padding: 60px 0;
+  background-color: #f8f9fa; /* Optional: Light gray background */
+}
+
+/* Card Styles */
+.card-text {
+  text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff,
+    -1px 1px 0 #fff;
+}
+
+/* Contact Form */
+@media (max-width: 768px) {
+  .form-mob-margin {
+    margin-top: 10px;
+  }
+}
+
+/* Footer */
+.custom-footer {
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+  text-align: left; /* Center the footer content */
+}
+
+/* Social Buttons */
+.social-button {
+  color: #495057;
+  font-size: 1.5rem; /* Make sure the size is appropriate */
+  margin: 0.5rem; /* Add some space around buttons */
+  display: inline-block; /* Ensure they take up space */
+  text-decoration: none; /* Remove underline if present */
+}
+
+/* Social Button Hover State */
+.social-button:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Back to Top */
+.back-to-top {
+  color: #007bff;
+  font-size: 1.5rem; /* Make sure the size is appropriate */
+  display: inline-block; /* Ensure it is visible */
+  text-decoration: none; /* Remove underline if present */
+}
+
+/* Back to Top Hover State */
+.back-to-top:hover {
+  color: #88cff1; /* Change color on hover */
+}

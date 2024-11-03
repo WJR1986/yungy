@@ -1,0 +1,54 @@
+.rounded-lg-3 {
+  border-radius: 1rem;
+}
+.card-img-top-portfolio {
+  padding-top: 40px;
+  max-height: 400px; /* Set the desired height */
+  object-fit: contain; /* Maintain aspect ratio while covering the container */
+}
+
+.btn-group-porfolio {
+  margin: 0 auto;
+}
+
+/* General Styles for Gallery Hero Section */
+.gallery-hero-row {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .gallery-hero-row {
+    flex-direction: row;
+  }
+}
+
+.gallery-hero-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  .gallery-hero-text {
+    text-align: start;
+    margin-bottom: 0;
+  }
+}
+
+.gallery-hero-image {
+  text-align: center;
+}
+
+.gallery-hero-img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Specific Styles for Mobile */
+@media (max-width: 768px) {
+  .gallery-hero-image {
+    margin-top: 20px;
+  }
+}

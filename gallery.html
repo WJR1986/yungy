@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Will">
+  <meta name="generator" content="Hugo 0.122.0">
+  <title>Elena Maya | Official Site</title>
+
+  <!-- Open Graph meta tags -->
+  <meta property="og:title" content="Elena Maya">
+  <meta property="og:description" content="Singer and Songwriter">
+  <meta property="og:image" content="https://elenamaya.com/img/portfolio/elenacloseupwhite.png">
+  <meta property="og:url" content="http://elenamaya.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card meta tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Elena Maya">
+  <meta name="twitter:description" content="Singer and Songwriter">
+  <meta name="twitter:image" content="https://elenamaya.com/img/portfolio/elenacloseupwhite.png">
+  <meta name="twitter:url" content="http://elenamaya.com">
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"> -->
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <!-- <link rel="stylesheet" href="css/heroes.css">
+  <link rel="stylesheet" href="css/navbar-fixed.css"> -->
+  <!-- <link rel="stylesheet" href="css/features.css"> -->
+  <!-- <link rel="stylesheet" href="css/modal.css"> -->
+  <link rel="stylesheet" href="css/gallery.css?v=1.0">
+  <link rel="stylesheet" href="css/style.css?v=1.0">
+
+  <!-- Google reCaptcha -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Love+Ya+Like+A+Sister&display=swap"
+    rel="stylesheet">
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/17e7e77638.js" crossorigin="anonymous"></script>
+  <style>
+
+
+  </style>
+</head>
+
+<body>
+  <!-- SVG Icons -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="bootstrap" viewBox="0 0 118 94">
+      <title>Bootstrap</title>
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+      </path>
+    </symbol>
+    <symbol id="check2" viewBox="0 0 16 16">
+      <path
+        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+    </symbol>
+    <symbol id="circle-half" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+    </symbol>
+    <symbol id="calendar3" viewBox="0 0 16 16">
+      <path
+        d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+      <path
+        d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+    </symbol>
+
+    <symbol id="geo-fill" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M8 16a.5.5 0 0 1-.496-.438l-1.35-9.49a3.5 3.5 0 1 1 3.692 0l-1.35 9.49A.5.5 0 0 1 8 16z" />
+    </symbol>
+  </svg>
+
+  <main>
+
+    <!------------------->
+    <!---- Navbar ------->
+    <!------------------->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <!-- <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap" />
+          </svg> -->
+          <!-- <img src="img/cat.png" alt="" style="height: 80px;"> -->
+          <span class="fs-4 love-ya-like-a-sister-regular">Elena Maya</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="index.html#my-work" class="nav-link">My Work</a></li>
+            <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link active">Gallery</a></li>
+            <li class="nav-item"><a href="index.html#contact" class="nav-link">Enquiries</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!------------------->
+    <!-- Hero Section -->
+    <!------------------->
+    <div class="container my-5">
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg gallery-hero-row">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3 gallery-hero-text">
+          <h1 class="display-4 fw-medium lh-1 text-body-emphasis love-ya-like-a-sister-regular">Gallery</h1>
+          <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, sequi quam. Consectetur officia
+            tempora quidem corrupti quod? Porro vel autem obcaecati a. Quasi quae sapiente temporibus ab natus, possimus
+            dicta.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+            <a href="#contact" class="btn btn-primary btn-primary-custom btn-lg px-4 me-md-2 fw-normal">Enquiries</a>
+            <a href="index.html#my-work" class="btn btn-outline-secondary btn-secondary-custom btn-lg px-4">My Work</a>
+          </div>
+
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden gallery-hero-image">
+          <img class="rounded-lg-3 gallery-hero-img" src="/img/portfolio/elenacloseupwhite.png" alt="Bootstrap Docs">
+        </div>
+      </div>
+    </div>
+
+    <!-- Snazzy Divider -->
+    <div class="b-example-divider"></div>
+
+    <!------------------->
+    <!-- Album Section -->
+    <!------------------->
+    <section class="pt-0 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Album example</h1>
+          <p class="lead text-body-secondary">Something short and leading about the collection below—its
+            contents, the
+            creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it
+            entirely.</p>
+          <p>
+            <a href="#" class="btn btn-primary btn-primary-custom my-2">Main call to action</a>
+            <a href="#" class="btn btn-outline-secondary btn-secondary-custom my-2">Secondary action</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-5 text-center container">
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container px-4">
+
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+
+                <div class="image-container">
+                  <img src="img/portfolio/elenacloseupwhite.png" class="card-img-top-portfolio" width="100%"
+                    height="300px" alt="Thumbnail" role="img" aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural
+                    lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary view-button"
+                        data-image-src="img/portfolio/elenacloseupwhite.png" data-title="Image Title will be here">
+                        View
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">Date/Time</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="image-container">
+                  <img src="img/portfolio/elenacloseupwhite.png" class="card-img-top-portfolio" width="100%"
+                    height="300px" alt="Thumbnail" role="img" aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural
+                    lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary view-button"
+                        data-image-src="img/portfolio/elenacloseupwhite.png" data-title="Image Title will be here">
+                        View
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">Date/Time</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="image-container">
+                  <img src="img/portfolio/elenacloseupwhite.png" class="card-img-top-portfolio" width="100%"
+                    height="300px" alt="Thumbnail" role="img" aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural
+                    lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary view-button"
+                        data-image-src="img/portfolio/elenacloseupwhite.png" data-title="Image Title will be here">
+                        View
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">Date/Time</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="image-container">
+                  <img src="img/portfolio/elenacloseupwhite.png" class="card-img-top-portfolio" width="100%"
+                    height="300px" alt="Thumbnail" role="img" aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural
+                    lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary view-button"
+                        data-image-src="img/portfolio/elenacloseupwhite.png" data-title="Image Title will be here">
+                        View
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">Date/Time</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="image-container">
+                  <img src="img/portfolio/elenacloseupwhite.png" class="card-img-top-portfolio" width="100%"
+                    height="300px" alt="Thumbnail" role="img" aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural
+                    lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary view-button"
+                        data-image-src="img/portfolio/elenacloseupwhite.png" data-title="Image Title will be here">
+                        View
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">Date/Time</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="image-container">
+                  <img src="img/portfolio/elenacloseupwhite.png" class="card-img-top-portfolio" width="100%"
+                    height="300px" alt="Thumbnail" role="img" aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural
+                    lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary view-button"
+                        data-image-src="img/portfolio/elenacloseupwhite.png" data-title="Image Title will be here">
+                        View
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">Date/Time</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="image-container">
+                  <img src="img/portfolio/elenacloseupwhite.png" class="card-img-top-portfolio" width="100%"
+                    height="300px" alt="Thumbnail" role="img" aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural
+                    lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary view-button"
+                        data-image-src="img/portfolio/elenacloseupwhite.png" data-title="Image Title will be here">
+                        View
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">Date/Time</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="image-container">
+                  <img src="img/portfolio/elenacloseupwhite.png" class="card-img-top-portfolio" width="100%"
+                    height="300px" alt="Thumbnail" role="img" aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural
+                    lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary view-button"
+                        data-image-src="img/portfolio/elenacloseupwhite.png" data-title="Image Title will be here">
+                        View
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">Date/Time</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="image-container">
+                  <img src="img/portfolio/elenacloseupwhite.png" class="card-img-top-portfolio" width="100%"
+                    height="300px" alt="Thumbnail" role="img" aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural
+                    lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary view-button"
+                        data-image-src="/img/portfolio/elenacloseupwhite.png" data-title="Image Title will be here">
+                        View
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">Date/Time</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Snazzy Divider -->
+    <div class="b-example-divider"></div>
+
+    <!------------------->
+    <!-- Media Section -->
+    <!------------------->
+    <section class="container px-4 pt-3 pb-5">
+      <!------------------------------>
+      <!-- Socials (badges) Section -->
+      <!------------------------------>
+      <div class="badges-section">
+        <div class="container">
+          <h1 class="pb-2 pt-5 border-bottom text-center text-md-start love-ya-like-a-sister-regular">Socials</h1>
+          <div class="row justify-content-left pt-2">
+            <!-- Facebook Badge -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
+              <a href="https://www.facebook.com/people/Elena-Maya/100086372215199/" target="_blank" class="badge-link">
+                <span class="badge text-primary-emphasis bg-primary-subtle border border-primary-subtle">
+                  <img src="/img/svg-icons/facebook.svg" alt="Facebook" width="24" height="24" class="me-2">
+                  Facebook
+                </span>
+              </a>
+            </div>
+            <!-- Apple Music Badge -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
+              <a href="https://music.apple.com/gb/artist/elena-maya/318777106" target="_blank" class="badge-link">
+                <span class="badge text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle">
+                  <img src="/img/svg-icons/apple.svg" alt="Apple Music" width="24" height="24" class="me-2">
+                  Apple Music
+                </span>
+              </a>
+            </div>
+            <!-- Spotify Badge -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
+              <a href="https://open.spotify.com/artist/1edRDz2M70YGM4K3Z9mEKz?go=1&sp_cid=33534d55bc97c415b39b23548f6aee4a&utm_source=embed_player_p&utm_medium=desktop&nd=1&dlsi=e6b9e20fcb344e61"
+                target="_blank" class="badge-link">
+                <span class="badge text-success-emphasis bg-success-subtle border border-success-subtle">
+                  <img src="/img/svg-icons/spotify.svg" alt="Spotify" width="24" height="24" class="me-2">
+                  Spotify
+                </span>
+              </a>
+            </div>
+            <!-- YouTube Badge -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
+              <a href="https://www.youtube.com/channel/UCiCL5PvJP3PJgK0lPgMEIMw" target="_blank" class="badge-link">
+                <span class="badge text-danger-emphasis bg-danger-subtle border border-danger-subtle">
+                  <img src="/img/svg-icons/youtube.svg" alt="YouTube" width="24" height="24" class="me-2">
+                  YouTube
+                </span>
+              </a>
+            </div>
+            <!-- Twitter Badge -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
+              <a href="https://www.instagram.com/elenamayamusic" target="_blank" class="badge-link">
+                <span class="badge text-warning-emphasis bg-warning-subtle border border-warning-subtle">
+                  <img src="/img/svg-icons/instagram.svg" alt="Twitter" width="24" height="24" class="me-2">
+                  Instagram
+                </span>
+              </a>
+            </div>
+            <!-- Soundcloud Badge -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
+              <a href="https://soundcloud.com/user-994844928?utm_source=mobi&utm_campaign=social_sharing"
+                target="_blank" class="badge-link">
+                <span class="badge text-info-emphasis bg-info-subtle border border-info-subtle">
+                  <img src="/img/svg-icons/soundcloud.svg" alt="Bandcamp" width="24" height="24" class="me-2">
+                  Soundcloud
+                </span>
+              </a>
+            </div>
+            <!-- TikTok Badge -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
+              <a href="https://www.tiktok.com/@elenamayamusic?_t=8oaiFL3L61Z&_r=1" target="_blank" class="badge-link">
+                <span class="badge text-light-emphasis bg-light-subtle border border-dark-subtle">
+                  <img src="/img/svg-icons/tiktok.svg" alt="TikTok" width="24" height="24" class="me-2">
+                  TikTok
+                </span>
+              </a>
+            </div>
+            <!-- Linktree Badge -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
+              <a href="https://linktr.ee/elenamaya" target="_blank" class="badge-link">
+                <span class="badge text-dark-emphasis bg-dark-subtle border border-dark-subtle">
+                  <img src="/img/svg-icons/tree.svg" alt="Linktree" width="24" height="24" class="me-2">
+                  Linktree
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Snazzy Divider -->
+    <div class="b-example-divider"></div>
+
+    <!--------------------->
+    <!-- Contact Section -->
+    <!--------------------->
+    <section id="contact" class="py-5">
+      <div class="container px-4">
+        <h2 class="pb-2 border-bottom text-left love-ya-like-a-sister-regular" data-aos="fade-down"
+          data-aos-duration="1000">
+          Enquiries
+        </h2>
+        <div class="row pt-4">
+          <!-- Contact Form Column -->
+          <div class="col-md-12" data-aos="fade-up" data-aos-duration="1000">
+            <!-- Bootstrap contact form -->
+            <form id="contact-form" method="post">
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your name" name="name" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="phone" class="form-label form-mob-margin">Phone Number</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="Your number" name="phone" required>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-12">
+                  <label for="email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email"
+                    required>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-12">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Your message" name="message"
+                    required></textarea>
+                </div>
+              </div>
+              <div class="row mb-3 align-items-center">
+                <div class="col-md-12 mb-3">
+                  <div class="g-recaptcha" data-sitekey="6LeDIh8qAAAAAHMSvGhJWyMf60ApqBsUvO9HxZAR"></div>
+                </div>
+                <div class="col-md-12">
+                  <div class="d-flex justify-content-left">
+                    <button type="submit" class="btn btn-primary btn-primary-custom fw-medium">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- Modal Display Area-->
+  <div class="modal fade" id="exampleModalDefault" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Your Title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body mx-auto">
+          <img src="/img/bootstrap-docs.png" class="img-fluid round" id="modalImage" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-body-secondary pt-5 custom-footer">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+      </p>
+      <p>&copy; Elena Maya | 2024</p>
+      <!-- <a href="https://www.instagram.com/alnwickpetcare/" target="_blank" class="social-button">
+        <i class="fab fa-instagram"></i>
+      </a> -->
+      <!-- Add more social buttons if needed -->
+    </div>
+  </footer>
+  <script src="js/gallery.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
