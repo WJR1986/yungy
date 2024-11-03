@@ -44,7 +44,7 @@ if (isset($_POST['g-recaptcha-response'])) {
         $message = sanitize_input($_POST['message']);
 
         // Email recipient
-        $to = 'willrichardson182@gmail.com';
+        $to = '';
 
         // Email subject
         $subject = 'Elena - You have received a new message';

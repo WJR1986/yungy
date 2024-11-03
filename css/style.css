@@ -90,8 +90,15 @@ body {
   margin-right: auto;
 }
 
+.navbar-brand:hover {
+  text-decoration: underline;
+  color: #a91d3a !important;
+  transition: 0.5s ease-in-out;
+}
+
 .navbar-nav {
   margin-left: auto;
+  color: #a91d3a !important;
 }
 
 .nav-link.active {
@@ -101,6 +108,7 @@ body {
 
 .nav-link:hover {
   text-decoration: underline;
+  color: #a91d3a !important;
 }
 
 .navbar-toggler {
@@ -173,7 +181,7 @@ body {
 
 /* Spark Position and Animation Duration */
 .spark1 {
-  left: 5%;
+  left: 10%;
   animation-duration: 3s;
 }
 .spark2 {
@@ -329,6 +337,9 @@ body {
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     padding: 20px; /* Add padding to the overlay */
+  }
+  .about-overlay-background {
+    padding: 10px 0px;
   }
 }
 
